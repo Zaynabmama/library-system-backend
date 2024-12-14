@@ -1,0 +1,75 @@
+[{
+  "_id": {
+    "$oid": "675cc78c1468a9bc5d272dc0"
+  },
+  "name": {
+    "en": "jogn doe",
+    "ar": "جون دو"
+  },
+  "email": "update@gmail.com",
+  "biography": {
+    "en": "John is an author from the USA.",
+    "ar": "جون هو كاتب من الولايات المتحدة الأمريكي"
+  },
+  "profileImageUrl": null,
+  "birthDate": {
+    "$date": "1985-10-20T00:00:00.000Z"
+  },
+  "createdAt": {
+    "$date": "2024-12-09T23:47:24.740Z"
+  },
+  "updatedAt": {
+    "$date": "2024-12-14T01:55:24.830Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "675cd7f7e932531360b858eb"
+  },
+  "name": {
+    "en": "jogn",
+    "ar": "جون"
+  },
+  "email": "test@gmail.com",
+  "biography": {
+    "en": "John is an author from the USA.",
+    "ar": "جون هو كاتب من الولايات المتحدة الأمريكي"
+  },
+  "profileImageUrl": "/uploads/running code.jpg",
+  "birthDate": {
+    "$date": "1990-10-20T00:00:00.000Z"
+  },
+  "createdAt": {
+    "$date": "2024-12-13T00:57:27.555Z"
+  },
+  "updatedAt": {
+    "$date": "2024-12-13T00:57:27.555Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "675ce58c78f7c52b09748d1d"
+  },
+  "name": {
+    "en": "jogn",
+    "ar": "جون"
+  },
+  "email": "johndoe@gmail.com",
+  "biography": {
+    "en": "John is an author from the USA.",
+    "ar": "جون هو كاتب من الولايات المتحدة الأمريكي"
+  },
+  "profileImageUrl": "/uploads/running code.jpg",
+  "birthDate": {
+    "$date": "1990-10-20T00:00:00.000Z"
+  },
+  "createdAt": {
+    "$date": "2024-12-14T01:55:24.753Z"
+  },
+  "updatedAt": {
+    "$date": "2024-12-14T01:55:24.753Z"
+  },
+  "__v": 0
+}]

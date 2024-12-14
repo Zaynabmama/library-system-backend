@@ -1,0 +1,4279 @@
+{
+	"info": {
+		"_postman_id": "e30e0046-7293-4a4e-98e3-8fd1dc34efc4",
+		"name": "library",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "37268455"
+	},
+	"item": [
+		{
+			"name": "book",
+			"item": [
+				{
+					"name": "get books",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{api_url}}/books?genre=abc",
+							"host": [
+								"{{api_url}}"
+							],
+							"path": [
+								"books"
+							],
+							"query": [
+								{
+									"key": "genre",
+									"value": "abc"
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "error",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{api_url}}/books?genre=fiction",
+									"host": [
+										"{{api_url}}"
+									],
+									"path": [
+										"books"
+									],
+									"query": [
+										{
+											"key": "genre",
+											"value": "fiction"
+										}
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Security-Policy",
+									"value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Resource-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Origin-Agent-Cluster",
+									"value": "?1"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "no-referrer"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=31536000; includeSubDomains"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-DNS-Prefetch-Control",
+									"value": "off"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "none"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "49"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"31-vsdC2A8/2gbjt5cgL5YcuQQknyo\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 14 Dec 2024 00:26:05 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "\"The requested book was not found in the system.\""
+						},
+						{
+							"name": "get books",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{api_url}}/books?genre=abc",
+									"host": [
+										"{{api_url}}"
+									],
+									"path": [
+										"books"
+									],
+									"query": [
+										{
+											"key": "genre",
+											"value": "abc"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Security-Policy",
+									"value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Resource-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Origin-Agent-Cluster",
+									"value": "?1"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "no-referrer"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=31536000; includeSubDomains"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-DNS-Prefetch-Control",
+									"value": "off"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "none"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "541"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"21d-9lfokGwMAzwD3m64KkDxkjwhwoI\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 14 Dec 2024 00:26:36 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"books\": [\n        {\n            \"title\": {\n                \"en\": \"Book Title in English\",\n                \"ar\": \"وصف الكتاب بالعربية\"\n            },\n            \"description\": {\n                \"en\": \"description\",\n                \"ar\": \"وصف الكتاب بالعربية\"\n            },\n            \"_id\": \"675cc9831468a9bc5d272dd0\",\n            \"isbn\": \"978457739858461\",\n            \"genre\": \"abc\",\n            \"numberOfAvailableCopies\": 4,\n            \"isBorrowable\": true,\n            \"numberOfBorrowableDays\": 14,\n            \"isOpenToReviews\": true,\n            \"minAge\": 20,\n            \"authorId\": \"675cc8101468a9bc5d272dc2\",\n            \"publishedDate\": \"2024-12-13T23:55:47.758Z\",\n            \"isPublished\": false,\n            \"createdAt\": \"2024-12-11T23:55:47.760Z\",\n            \"__v\": 0\n        }\n    ],\n    \"pagination\": {\n        \"page\": 1,\n        \"limit\": 10\n    }\n}"
+						},
+						{
+							"name": "get books",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{api_url}}/books?genre=abc",
+									"host": [
+										"{{api_url}}"
+									],
+									"path": [
+										"books"
+									],
+									"query": [
+										{
+											"key": "genre",
+											"value": "abc"
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Security-Policy",
+									"value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Resource-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Origin-Agent-Cluster",
+									"value": "?1"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "no-referrer"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=31536000; includeSubDomains"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-DNS-Prefetch-Control",
+									"value": "off"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "none"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "540"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"21c-oK/cDKzEdvlPhrCIc21o+V1cOHs\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 14 Dec 2024 00:28:25 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"books\": [\n        {\n            \"title\": {\n                \"en\": \"Book Title in English\",\n                \"ar\": \"وصف الكتاب بالعربية\"\n            },\n            \"description\": {\n                \"en\": \"description\",\n                \"ar\": \"وصف الكتاب بالعربية\"\n            },\n            \"_id\": \"675cc9831468a9bc5d272dd0\",\n            \"isbn\": \"978457739858461\",\n            \"genre\": \"abc\",\n            \"numberOfAvailableCopies\": 4,\n            \"isBorrowable\": true,\n            \"numberOfBorrowableDays\": 14,\n            \"isOpenToReviews\": true,\n            \"minAge\": 20,\n            \"authorId\": \"675cc8101468a9bc5d272dc2\",\n            \"publishedDate\": \"2024-12-12T23:55:47.758Z\",\n            \"isPublished\": true,\n            \"createdAt\": \"2024-12-11T23:55:47.760Z\",\n            \"__v\": 0\n        }\n    ],\n    \"pagination\": {\n        \"page\": 1,\n        \"limit\": 10\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "get book by id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{api_url}}/book/675cc9831468a9bc5d272dd0",
+							"host": [
+								"{{api_url}}"
+							],
+							"path": [
+								"book",
+								"675cc9831468a9bc5d272dd0"
+							],
+							"query": [
+								{
+									"key": "BookId",
+									"value": "675cc9831468a9bc5d272dd0",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "get book by id",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{api_url}}/book/675cc9831468a9bc5d272dd0",
+									"host": [
+										"{{api_url}}"
+									],
+									"path": [
+										"book",
+										"675cc9831468a9bc5d272dd0"
+									],
+									"query": [
+										{
+											"key": "BookId",
+											"value": "675cc9831468a9bc5d272dd0",
+											"disabled": true
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Security-Policy",
+									"value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Resource-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Origin-Agent-Cluster",
+									"value": "?1"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "no-referrer"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=31536000; includeSubDomains"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-DNS-Prefetch-Control",
+									"value": "off"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "none"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "504"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"1f8-gW3dvAK+iN1s9v+4AHkV4UyhLKE\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 14 Dec 2024 00:18:37 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"title\": {\n        \"en\": \"Book Title in English\",\n        \"ar\": \"وصف الكتاب بالعربية\"\n    },\n    \"description\": {\n        \"en\": \"description\",\n        \"ar\": \"وصف الكتاب بالعربية\"\n    },\n    \"_id\": \"675cc9831468a9bc5d272dd0\",\n    \"isbn\": \"978457739858461\",\n    \"genre\": \"abc\",\n    \"numberOfAvailableCopies\": 4,\n    \"isBorrowable\": true,\n    \"numberOfBorrowableDays\": 14,\n    \"isOpenToReviews\": true,\n    \"minAge\": 20,\n    \"authorId\": \"675cc8101468a9bc5d272dc2\",\n    \"coverImageUrl\": \"/uploads/ZaynabMama_CoverImage.png\",\n    \"isPublished\": false,\n    \"createdAt\": \"2024-12-11T23:55:47.760Z\",\n    \"__v\": 0\n}"
+						}
+					]
+				},
+				{
+					"name": "update book",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/C:/Users/Administrator/Downloads/ZaynabMama_CoverImage.png",
+									"disabled": true
+								},
+								{
+									"key": "isPublished",
+									"value": "true",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{api_url}}/book/675cc9831468a9bc5d272dd0",
+							"host": [
+								"{{api_url}}"
+							],
+							"path": [
+								"book",
+								"675cc9831468a9bc5d272dd0"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "validation error",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \r\n    \"minAge\": \"Doe\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{api_url}}/book/675cc9831468a9bc5d272dd0",
+									"host": [
+										"{{api_url}}"
+									],
+									"path": [
+										"book",
+										"675cc9831468a9bc5d272dd0"
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Security-Policy",
+									"value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Resource-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Origin-Agent-Cluster",
+									"value": "?1"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "no-referrer"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=31536000; includeSubDomains"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-DNS-Prefetch-Control",
+									"value": "off"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "none"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "98"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"62-DIlYKz+T0R7i35DeY9OrDlOOfmc\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 14 Dec 2024 00:07:47 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"There are validation errors in the request.\",\n    \"errors\": [\n        \"\\\"minAge\\\" must be a number\"\n    ]\n}"
+						},
+						{
+							"name": "update book",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "image",
+											"type": "file",
+											"src": "/C:/Users/Administrator/Downloads/ZaynabMama_CoverImage.png"
+										}
+									],
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{api_url}}/book/675cc9831468a9bc5d272dd0",
+									"host": [
+										"{{api_url}}"
+									],
+									"path": [
+										"book",
+										"675cc9831468a9bc5d272dd0"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Security-Policy",
+									"value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Resource-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Origin-Agent-Cluster",
+									"value": "?1"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "no-referrer"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=31536000; includeSubDomains"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-DNS-Prefetch-Control",
+									"value": "off"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "none"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "586"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"24a-bdYt1dwOzhAQef+nMClLq2zkNtA\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 14 Dec 2024 00:10:57 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"title\": {\n        \"en\": \"Book Title in English\",\n        \"ar\": \"وصف الكتاب بالعربية\"\n    },\n    \"description\": {\n        \"en\": \"description\",\n        \"ar\": \"وصف الكتاب بالعربية\"\n    },\n    \"_id\": \"675cc9831468a9bc5d272dd0\",\n    \"isbn\": \"978457739858461\",\n    \"genre\": \"abc\",\n    \"numberOfAvailableCopies\": 4,\n    \"isBorrowable\": true,\n    \"numberOfBorrowableDays\": 14,\n    \"isOpenToReviews\": true,\n    \"minAge\": 20,\n    \"authorId\": \"675cc8101468a9bc5d272dc2\",\n    \"coverImageUrl\": \"/uploads/ZaynabMama_CoverImage.png\",\n    \"publishedDate\": \"2024-12-11T23:55:47.758Z\",\n    \"isPublished\": false,\n    \"createdAt\": \"2024-12-11T23:55:47.760Z\",\n    \"updatedAt\": \"2024-12-12T00:10:57.354Z\",\n    \"__v\": 0\n}"
+						},
+						{
+							"name": "validation error",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "image",
+											"type": "file",
+											"src": "/C:/Users/Administrator/Downloads/ZaynabMama_CoverImage.png",
+											"disabled": true
+										},
+										{
+											"key": "isPublished",
+											"value": "true",
+											"type": "text"
+										}
+									],
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{api_url}}/book/675cc9831468a9bc5d272dd0",
+									"host": [
+										"{{api_url}}"
+									],
+									"path": [
+										"book",
+										"675cc9831468a9bc5d272dd0"
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Security-Policy",
+									"value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Resource-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Origin-Agent-Cluster",
+									"value": "?1"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "no-referrer"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=31536000; includeSubDomains"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-DNS-Prefetch-Control",
+									"value": "off"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "none"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "101"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"65-Ulwf/pMejbhbfZgZsIJeOcn89eQ\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 14 Dec 2024 00:12:13 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"There are validation errors in the request.\",\n    \"errors\": [\n        \"\\\"isPublished\\\" is not allowed\"\n    ]\n}"
+						}
+					]
+				},
+				{
+					"name": "Add book",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept-Language",
+								"value": "ar, en",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "title[en]",
+									"value": "book title",
+									"type": "text"
+								},
+								{
+									"key": "genre",
+									"value": "abc",
+									"type": "text"
+								},
+								{
+									"key": "description[en]",
+									"value": "description",
+									"type": "text"
+								},
+								{
+									"key": "minAge",
+									"value": "20",
+									"type": "text"
+								},
+								{
+									"key": "authorId",
+									"value": "675cc8101468a9bc5d272dc2",
+									"type": "text"
+								},
+								{
+									"key": "numberOfAvailableCopies",
+									"value": "4",
+									"type": "text"
+								},
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/C:/Users/Administrator/Downloads/zaynab_coverimage.png"
+								},
+								{
+									"key": "description[ar]",
+									"value": "وصف الكتاب بالعربية",
+									"type": "text"
+								},
+								{
+									"key": "title[ar]",
+									"value": "وصف الكتاب بالعربية",
+									"type": "text"
+								},
+								{
+									"key": "numberOfBorrowableDays",
+									"value": "14",
+									"type": "text"
+								},
+								{
+									"key": "publishedDate",
+									"value": "1925-04-10",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{api_url}}/add-book",
+							"host": [
+								"{{api_url}}"
+							],
+							"path": [
+								"add-book"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Add book",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept-Language",
+										"value": "ar, en",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "title[en]",
+											"value": "\"Book Title in English\"",
+											"type": "text"
+										},
+										{
+											"key": "isbn",
+											"value": "4",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "genre",
+											"value": "abc",
+											"type": "text"
+										},
+										{
+											"key": "description[en]",
+											"value": "description",
+											"type": "text"
+										},
+										{
+											"key": "minAge",
+											"value": "20",
+											"type": "text"
+										},
+										{
+											"key": "authorId",
+											"value": "675cc8101468a9bc5d272dc2",
+											"type": "text"
+										},
+										{
+											"key": "numberOfAvailableCopies",
+											"value": "4",
+											"type": "text"
+										},
+										{
+											"key": "image",
+											"type": "file",
+											"src": "/C:/Users/Administrator/OneDrive/Pictures/zaynab.png"
+										},
+										{
+											"key": "description[ar]",
+											"value": "وصف الكتاب بالعربية",
+											"type": "text"
+										},
+										{
+											"key": "title[ar]",
+											"value": "وصف الكتاب بالعربية",
+											"type": "text"
+										},
+										{
+											"key": "numberOfBorrowableDays",
+											"value": "14",
+											"type": "text"
+										},
+										{
+											"key": "publishedDate",
+											"value": "1925-04-10",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{api_url}}/add-book",
+									"host": [
+										"{{api_url}}"
+									],
+									"path": [
+										"add-book"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Security-Policy",
+									"value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Resource-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Origin-Agent-Cluster",
+									"value": "?1"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "no-referrer"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=31536000; includeSubDomains"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-DNS-Prefetch-Control",
+									"value": "off"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "none"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "575"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"23f-flfmWnWKaMWFchwNliR+JI4HmMw\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 13 Dec 2024 23:57:04 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"title\": {\n        \"en\": \"\\\"Book Title in English\\\"\",\n        \"ar\": \"وصف الكتاب بالعربية\"\n    },\n    \"isbn\": \"978389001865650\",\n    \"genre\": \"abc\",\n    \"description\": {\n        \"en\": \"description\",\n        \"ar\": \"وصف الكتاب بالعربية\"\n    },\n    \"numberOfAvailableCopies\": 4,\n    \"isBorrowable\": true,\n    \"numberOfBorrowableDays\": 14,\n    \"isOpenToReviews\": true,\n    \"minAge\": 20,\n    \"authorId\": \"675cc8101468a9bc5d272dc2\",\n    \"coverImageUrl\": \"/uploads/zaynab.png\",\n    \"publishedDate\": \"2024-12-11T23:57:04.033Z\",\n    \"isPublished\": false,\n    \"_id\": \"675cc9d01468a9bc5d272dd4\",\n    \"createdAt\": \"2024-12-11T23:57:04.035Z\",\n    \"updatedAt\": \"2024-12-11T23:57:04.035Z\",\n    \"__v\": 0\n}"
+						},
+						{
+							"name": "validation error",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept-Language",
+										"value": "ar, en",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "title[en]",
+											"value": "\"Book Title in English\"",
+											"type": "text"
+										},
+										{
+											"key": "genre",
+											"value": "abc",
+											"type": "text"
+										},
+										{
+											"key": "description[en]",
+											"value": "description",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "minAge",
+											"value": "20",
+											"type": "text"
+										},
+										{
+											"key": "authorId",
+											"value": "675cc8101468a9bc5d272dc2",
+											"type": "text"
+										},
+										{
+											"key": "numberOfAvailableCopies",
+											"value": "4",
+											"type": "text"
+										},
+										{
+											"key": "image",
+											"type": "file",
+											"src": "/C:/Users/Administrator/OneDrive/Pictures/zaynab.png"
+										},
+										{
+											"key": "description[ar]",
+											"value": "وصف الكتاب بالعربية",
+											"type": "text",
+											"disabled": true
+										},
+										{
+											"key": "title[ar]",
+											"value": "وصف الكتاب بالعربية",
+											"type": "text"
+										},
+										{
+											"key": "numberOfBorrowableDays",
+											"value": "14",
+											"type": "text"
+										},
+										{
+											"key": "publishedDate",
+											"value": "1925-04-10",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{api_url}}/add-book",
+									"host": [
+										"{{api_url}}"
+									],
+									"path": [
+										"add-book"
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Security-Policy",
+									"value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Resource-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Origin-Agent-Cluster",
+									"value": "?1"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "no-referrer"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=31536000; includeSubDomains"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-DNS-Prefetch-Control",
+									"value": "off"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "none"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "98"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"62-aYRQpFd3teLvvFocFXJhoK9l7rI\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 14 Dec 2024 00:01:14 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"message\": \"There are validation errors in the request.\",\n    \"errors\": [\n        \"\\\"description\\\" is required\"\n    ]\n}"
+						},
+						{
+							"name": "file type error",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "Accept-Language",
+										"value": "ar, en",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "title[en]",
+											"value": "book title",
+											"type": "text"
+										},
+										{
+											"key": "genre",
+											"value": "abc",
+											"type": "text"
+										},
+										{
+											"key": "description[en]",
+											"value": "description",
+											"type": "text"
+										},
+										{
+											"key": "minAge",
+											"value": "20",
+											"type": "text"
+										},
+										{
+											"key": "authorId",
+											"value": "675cc8101468a9bc5d272dc2",
+											"type": "text"
+										},
+										{
+											"key": "numberOfAvailableCopies",
+											"value": "4",
+											"type": "text"
+										},
+										{
+											"key": "image",
+											"type": "file",
+											"src": "/C:/Users/Administrator/Downloads/Eurisko - First Assignment - Library System.pdf"
+										},
+										{
+											"key": "description[ar]",
+											"value": "وصف الكتاب بالعربية",
+											"type": "text"
+										},
+										{
+											"key": "title[ar]",
+											"value": "وصف الكتاب بالعربية",
+											"type": "text"
+										},
+										{
+											"key": "numberOfBorrowableDays",
+											"value": "14",
+											"type": "text"
+										},
+										{
+											"key": "publishedDate",
+											"value": "1925-04-10",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{api_url}}/add-book",
+									"host": [
+										"{{api_url}}"
+									],
+									"path": [
+										"add-book"
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Security-Policy",
+									"value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Resource-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Origin-Agent-Cluster",
+									"value": "?1"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "no-referrer"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=31536000; includeSubDomains"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-DNS-Prefetch-Control",
+									"value": "off"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "none"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "72"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"48-2X9L+1IsQMMmIlnbxuiGrUP5lvM\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 14 Dec 2024 00:14:43 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"error\": \"The file type is not supported. Please upload an image file.\"\n}"
+						}
+					]
+				},
+				{
+					"name": "delete book",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{api_url}}/book/675cce50e932531360b858cc",
+							"host": [
+								"{{api_url}}"
+							],
+							"path": [
+								"book",
+								"675cce50e932531360b858cc"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "delete book",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{api_url}}/book/675cce50e932531360b858cc",
+									"host": [
+										"{{api_url}}"
+									],
+									"path": [
+										"book",
+										"675cce50e932531360b858cc"
+									]
+								}
+							},
+							"status": "No Content",
+							"code": 204,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Security-Policy",
+									"value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Resource-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Origin-Agent-Cluster",
+									"value": "?1"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "no-referrer"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=31536000; includeSubDomains"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-DNS-Prefetch-Control",
+									"value": "off"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "none"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"27-2sU+wH8LsO2HgYqDa0daGODIV30\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 14 Dec 2024 00:17:08 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "publish book",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "{{api_url}}/book/675cc9831468a9bc5d272dd0/publish",
+							"host": [
+								"{{api_url}}"
+							],
+							"path": [
+								"book",
+								"675cc9831468a9bc5d272dd0",
+								"publish"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "error",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": "{{api_url}}/book/675cc9831468a9bc5d272dd0/publish",
+									"host": [
+										"{{api_url}}"
+									],
+									"path": [
+										"book",
+										"675cc9831468a9bc5d272dd0",
+										"publish"
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Security-Policy",
+									"value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Resource-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Origin-Agent-Cluster",
+									"value": "?1"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "no-referrer"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=31536000; includeSubDomains"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-DNS-Prefetch-Control",
+									"value": "off"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "none"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "37"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"25-EfnObmQ2/wYxgmmagoHqM6YnykQ\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 14 Dec 2024 00:36:23 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"error\": \"Book is already published\"\n}"
+						},
+						{
+							"name": "publish book",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"url": {
+									"raw": "{{api_url}}/book/675cc9831468a9bc5d272dd0/publish",
+									"host": [
+										"{{api_url}}"
+									],
+									"path": [
+										"book",
+										"675cc9831468a9bc5d272dd0",
+										"publish"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Security-Policy",
+									"value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Resource-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Origin-Agent-Cluster",
+									"value": "?1"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "no-referrer"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=31536000; includeSubDomains"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-DNS-Prefetch-Control",
+									"value": "off"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "none"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "585"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"249-o9cgDUEcejwN5Gt69zarOknuQN0\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 14 Dec 2024 00:37:21 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"title\": {\n        \"en\": \"Book Title in English\",\n        \"ar\": \"وصف الكتاب بالعربية\"\n    },\n    \"description\": {\n        \"en\": \"description\",\n        \"ar\": \"وصف الكتاب بالعربية\"\n    },\n    \"_id\": \"675cc9831468a9bc5d272dd0\",\n    \"isbn\": \"978457739858461\",\n    \"genre\": \"abc\",\n    \"numberOfAvailableCopies\": 4,\n    \"isBorrowable\": true,\n    \"numberOfBorrowableDays\": 14,\n    \"isOpenToReviews\": true,\n    \"minAge\": 20,\n    \"authorId\": \"675cc8101468a9bc5d272dc2\",\n    \"coverImageUrl\": \"/uploads/ZaynabMama_CoverImage.png\",\n    \"publishedDate\": \"2024-12-14T00:37:21.967Z\",\n    \"isPublished\": true,\n    \"createdAt\": \"2024-12-11T23:55:47.760Z\",\n    \"updatedAt\": \"2024-12-14T00:37:21.969Z\",\n    \"__v\": 0\n}"
+						}
+					]
+				},
+				{
+					"name": "get published books",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{api_url}}/published-books",
+							"host": [
+								"{{api_url}}"
+							],
+							"path": [
+								"published-books"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "success",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{api_url}}/published-books",
+									"host": [
+										"{{api_url}}"
+									],
+									"path": [
+										"published-books"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Security-Policy",
+									"value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Resource-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Origin-Agent-Cluster",
+									"value": "?1"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "no-referrer"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=31536000; includeSubDomains"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-DNS-Prefetch-Control",
+									"value": "off"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "none"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "242"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"f2-MTHrUZQPnCVdW8rNvYwMStGSBLo\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 14 Dec 2024 00:38:33 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"books\": [\n        {\n            \"title\": {\n                \"en\": \"Book Title in English\"\n            },\n            \"description\": {\n                \"en\": \"description\"\n            },\n            \"_id\": \"675cc9831468a9bc5d272dd0\",\n            \"genre\": \"abc\",\n            \"isBorrowable\": true,\n            \"coverImageUrl\": \"/uploads/ZaynabMama_CoverImage.png\"\n        }\n    ],\n    \"pagination\": {\n        \"page\": 1,\n        \"limit\": 10\n    }\n}"
+						}
+					]
+				},
+				{
+					"name": "fetchbook by id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept-Language",
+								"value": "en",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{api_url}}/published-book/675cc9831468a9bc5d272dd0",
+							"host": [
+								"{{api_url}}"
+							],
+							"path": [
+								"published-book",
+								"675cc9831468a9bc5d272dd0"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "New Request",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept-Language",
+										"value": "en",
+										"type": "text"
+									}
+								],
+								"url": {
+									"raw": "{{api_url}}/published-book/675cc9831468a9bc5d272dd0",
+									"host": [
+										"{{api_url}}"
+									],
+									"path": [
+										"published-book",
+										"675cc9831468a9bc5d272dd0"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Security-Policy",
+									"value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Resource-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Origin-Agent-Cluster",
+									"value": "?1"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "no-referrer"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=31536000; includeSubDomains"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-DNS-Prefetch-Control",
+									"value": "off"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "none"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "307"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"133-DvWmjPEM1WIOLjTwK2rcb3pbiNs\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 14 Dec 2024 00:42:32 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"title\": {\n        \"en\": \"Book Title in English\"\n    },\n    \"description\": {\n        \"en\": \"description\"\n    },\n    \"_id\": \"675cc9831468a9bc5d272dd0\",\n    \"isbn\": \"978457739858461\",\n    \"genre\": \"abc\",\n    \"numberOfAvailableCopies\": 4,\n    \"numberOfBorrowableDays\": 14,\n    \"isOpenToReviews\": true,\n    \"authorId\": \"675cc8101468a9bc5d272dc2\",\n    \"publishedDate\": \"2024-12-13T00:37:21.967Z\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "author",
+			"item": [
+				{
+					"name": "add author",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "image",
+									"type": "file",
+									"src": [
+										"postman-cloud:///1efb9ad5-40b4-4440-8406-039010c64f5a",
+										"/C:/Users/Administrator/OneDrive/Pictures/running code.jpg"
+									]
+								},
+								{
+									"key": "name[ar]",
+									"value": "جون",
+									"type": "text"
+								},
+								{
+									"key": "name[en]",
+									"value": "jogn",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "johndoe@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "birthDate",
+									"value": "1990-10-20",
+									"type": "text"
+								},
+								{
+									"key": "biography[ar]",
+									"value": "جون هو كاتب من الولايات المتحدة الأمريكي",
+									"type": "text"
+								},
+								{
+									"key": "biography[en]",
+									"value": "John is an author from the USA.",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{api_url}}/add-author",
+							"host": [
+								"{{api_url}}"
+							],
+							"path": [
+								"add-author"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "add author",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "image",
+											"type": "file",
+											"src": "/C:/Users/Administrator/OneDrive/Pictures/running code.jpg"
+										},
+										{
+											"key": "name[ar]",
+											"value": "جون",
+											"type": "text"
+										},
+										{
+											"key": "name[en]",
+											"value": "jogn",
+											"type": "text"
+										},
+										{
+											"key": "email",
+											"value": "johndoe@gmail.com",
+											"type": "text"
+										},
+										{
+											"key": "birthDate",
+											"value": "1990-10-20",
+											"type": "text"
+										},
+										{
+											"key": "biography[ar]",
+											"value": "جون هو كاتب من الولايات المتحدة الأمريكي",
+											"type": "text"
+										},
+										{
+											"key": "biography[en]",
+											"value": "John is an author from the USA.",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{api_url}}/add-author",
+									"host": [
+										"{{api_url}}"
+									],
+									"path": [
+										"add-author"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Security-Policy",
+									"value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Resource-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Origin-Agent-Cluster",
+									"value": "?1"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "no-referrer"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=31536000; includeSubDomains"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-DNS-Prefetch-Control",
+									"value": "off"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "none"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "403"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"193-yJsxMawQBw+6r+xAdgIjOyCL1fU\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 13 Dec 2024 23:49:36 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"name\": {\n        \"en\": \"jogn\",\n        \"ar\": \"جون\"\n    },\n    \"email\": \"johndoe@gmail.com\",\n    \"biography\": {\n        \"en\": \"John is an author from the USA.\",\n        \"ar\": \"جون هو كاتب من الولايات المتحدة الأمريكي\"\n    },\n    \"profileImageUrl\": \"/uploads/running code.jpg\",\n    \"birthDate\": \"1990-10-20T00:00:00.000Z\",\n    \"_id\": \"675cc8101468a9bc5d272dc2\",\n    \"createdAt\": \"2024-12-09T23:49:36.027Z\",\n    \"updatedAt\": \"2024-12-09T23:49:36.027Z\",\n    \"__v\": 0\n}"
+						},
+						{
+							"name": "error",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "image",
+											"type": "file",
+											"src": [
+												"postman-cloud:///1efb9ad5-40b4-4440-8406-039010c64f5a",
+												"/C:/Users/Administrator/OneDrive/Pictures/running code.jpg"
+											]
+										},
+										{
+											"key": "name[ar]",
+											"value": "جون",
+											"type": "text"
+										},
+										{
+											"key": "name[en]",
+											"value": "jogn",
+											"type": "text"
+										},
+										{
+											"key": "email",
+											"value": "johndoe@gmail.com",
+											"type": "text"
+										},
+										{
+											"key": "birthDate",
+											"value": "1990-10-20",
+											"type": "text"
+										},
+										{
+											"key": "biography[ar]",
+											"value": "جون هو كاتب من الولايات المتحدة الأمريكي",
+											"type": "text"
+										},
+										{
+											"key": "biography[en]",
+											"value": "John is an author from the USA.",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{api_url}}/add-author",
+									"host": [
+										"{{api_url}}"
+									],
+									"path": [
+										"add-author"
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Security-Policy",
+									"value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Resource-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Origin-Agent-Cluster",
+									"value": "?1"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "no-referrer"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=31536000; includeSubDomains"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-DNS-Prefetch-Control",
+									"value": "off"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "none"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "28"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"1c-N2q5SNLdThJE4RvD6VHV1354nvI\""
+								},
+								{
+									"key": "Date",
+									"value": "Fri, 13 Dec 2024 23:52:51 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"error\": \"Unexpected field\"\n}"
+						}
+					]
+				},
+				{
+					"name": "update author",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "image",
+									"type": "file",
+									"src": "/C:/Users/Administrator/Downloads/download (2).jpg",
+									"disabled": true
+								},
+								{
+									"key": "email",
+									"value": "update@gmail.com",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{api_url}}/update-author/675cc78c1468a9bc5d272dc0",
+							"host": [
+								"{{api_url}}"
+							],
+							"path": [
+								"update-author",
+								"675cc78c1468a9bc5d272dc0"
+							],
+							"query": [
+								{
+									"key": "image",
+									"value": null,
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "update author",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "formdata",
+									"formdata": [
+										{
+											"key": "image",
+											"type": "file",
+											"src": "/C:/Users/Administrator/Downloads/download (2).jpg",
+											"disabled": true
+										},
+										{
+											"key": "email",
+											"value": "update@gmail.com",
+											"type": "text"
+										}
+									]
+								},
+								"url": {
+									"raw": "{{api_url}}/update-author/675cc78c1468a9bc5d272dc0",
+									"host": [
+										"{{api_url}}"
+									],
+									"path": [
+										"update-author",
+										"675cc78c1468a9bc5d272dc0"
+									],
+									"query": [
+										{
+											"key": "image",
+											"value": null,
+											"disabled": true
+										}
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Security-Policy",
+									"value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Resource-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Origin-Agent-Cluster",
+									"value": "?1"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "no-referrer"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=31536000; includeSubDomains"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-DNS-Prefetch-Control",
+									"value": "off"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "none"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "388"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"184-ypYOKGejHVg4uxsskoPAh+x8C+c\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 14 Dec 2024 00:51:53 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"name\": {\n        \"en\": \"jogn doe\",\n        \"ar\": \"جون دو\"\n    },\n    \"biography\": {\n        \"en\": \"John is an author from the USA.\",\n        \"ar\": \"جون هو كاتب من الولايات المتحدة الأمريكي\"\n    },\n    \"_id\": \"675cc78c1468a9bc5d272dc0\",\n    \"email\": \"update@gmail.com\",\n    \"profileImageUrl\": null,\n    \"birthDate\": \"1985-10-20T00:00:00.000Z\",\n    \"createdAt\": \"2024-12-09T23:47:24.740Z\",\n    \"updatedAt\": \"2024-12-13T00:51:53.863Z\",\n    \"__v\": 0\n}"
+						}
+					]
+				},
+				{
+					"name": "delete author",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{api_url}}/delete-author/675cc8101468a9bc5d272dc2",
+							"host": [
+								"{{api_url}}"
+							],
+							"path": [
+								"delete-author",
+								"675cc8101468a9bc5d272dc2"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "delete author",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{api_url}}/delete-author/675cc8101468a9bc5d272dc2",
+									"host": [
+										"{{api_url}}"
+									],
+									"path": [
+										"delete-author",
+										"675cc8101468a9bc5d272dc2"
+									]
+								}
+							},
+							"status": "No Content",
+							"code": 204,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Security-Policy",
+									"value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Resource-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Origin-Agent-Cluster",
+									"value": "?1"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "no-referrer"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=31536000; includeSubDomains"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-DNS-Prefetch-Control",
+									"value": "off"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "none"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"29-y5E/g1GAJiT/kj57/wpYgn2BeFk\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 14 Dec 2024 00:54:06 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "get author by id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{api_url}}/author/675cc78c1468a9bc5d272dc0",
+							"host": [
+								"{{api_url}}"
+							],
+							"path": [
+								"author",
+								"675cc78c1468a9bc5d272dc0"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "get author by id",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{api_url}}/author/675cd7f7e932531360b858eb",
+									"host": [
+										"{{api_url}}"
+									],
+									"path": [
+										"author",
+										"675cd7f7e932531360b858eb"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Security-Policy",
+									"value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Resource-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Origin-Agent-Cluster",
+									"value": "?1"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "no-referrer"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=31536000; includeSubDomains"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-DNS-Prefetch-Control",
+									"value": "off"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "none"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "388"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"184-ypYOKGejHVg4uxsskoPAh+x8C+c\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 14 Dec 2024 00:54:30 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"name\": {\n        \"en\": \"jogn doe\",\n        \"ar\": \"جون دو\"\n    },\n    \"biography\": {\n        \"en\": \"John is an author from the USA.\",\n        \"ar\": \"جون هو كاتب من الولايات المتحدة الأمريكي\"\n    },\n    \"_id\": \"675cc78c1468a9bc5d272dc0\",\n    \"email\": \"update@gmail.com\",\n    \"profileImageUrl\": null,\n    \"birthDate\": \"1985-10-20T00:00:00.000Z\",\n    \"createdAt\": \"2024-12-09T23:47:24.740Z\",\n    \"updatedAt\": \"2024-12-14T00:51:53.863Z\",\n    \"__v\": 0\n}"
+						}
+					]
+				},
+				{
+					"name": "get author profile",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept-Language",
+								"value": "ar",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "{{api_url}}/author-profile/675cd7f7e932531360b858eb",
+							"host": [
+								"{{api_url}}"
+							],
+							"path": [
+								"author-profile",
+								"675cd7f7e932531360b858eb"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "error",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept-Language",
+										"value": "ar",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"url": {
+									"raw": "{{api_url}}/author-profile/675bbf7dfceefa4fb2b2934e",
+									"host": [
+										"{{api_url}}"
+									],
+									"path": [
+										"author-profile",
+										"675bbf7dfceefa4fb2b2934e"
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Security-Policy",
+									"value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Resource-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Origin-Agent-Cluster",
+									"value": "?1"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "no-referrer"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=31536000; includeSubDomains"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-DNS-Prefetch-Control",
+									"value": "off"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "none"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "81"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"51-30Ajqn+AD2pO684E3ttx++7KWuU\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 14 Dec 2024 00:54:53 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"statusCode\": 404,\n    \"code\": \"AUTHOR_NOT_FOUND\",\n    \"message\": \"author is not excisting.\"\n}"
+						},
+						{
+							"name": "get author profile",
+							"originalRequest": {
+								"method": "GET",
+								"header": [
+									{
+										"key": "Accept-Language",
+										"value": "ar",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"url": {
+									"raw": "{{api_url}}/author-profile/675cd7f7e932531360b858eb",
+									"host": [
+										"{{api_url}}"
+									],
+									"path": [
+										"author-profile",
+										"675cd7f7e932531360b858eb"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Security-Policy",
+									"value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Resource-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Origin-Agent-Cluster",
+									"value": "?1"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "no-referrer"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=31536000; includeSubDomains"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-DNS-Prefetch-Control",
+									"value": "off"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "none"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "107"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"6b-jmw3DNXzeC7ImD2SNWY4et5gaHo\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 14 Dec 2024 00:58:49 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"name\": \"jogn\",\n    \"biography\": \"John is an author from the USA.\",\n    \"profileImageUrl\": \"/uploads/running code.jpg\"\n}"
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "member",
+			"item": [
+				{
+					"name": "add member",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{api_url}}/add-member",
+							"host": [
+								"{{api_url}}"
+							],
+							"path": [
+								"add-member"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "add member",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"name\": \"zaynab\",\r\n  \"username\": \"zaynabma\",\r\n  \"email\": \"zaynab@gamil.com\",\r\n  \"birthDate\": \"2001-08-01\"\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{api_url}}/add-member",
+									"host": [
+										"{{api_url}}"
+									],
+									"path": [
+										"add-member"
+									]
+								}
+							},
+							"status": "Created",
+							"code": 201,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Security-Policy",
+									"value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Resource-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Origin-Agent-Cluster",
+									"value": "?1"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "no-referrer"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=31536000; includeSubDomains"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-DNS-Prefetch-Control",
+									"value": "off"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "none"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "279"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"117-2ze+/y2UTyMmfc81qiyv3V17AMA\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 14 Dec 2024 01:05:58 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"name\": \"zaynab\",\n    \"username\": \"zaynabma\",\n    \"email\": \"zaynab@gamil.com\",\n    \"birthDate\": \"2001-08-01T00:00:00.000Z\",\n    \"subscribedBooks\": [],\n    \"returnRate\": 0,\n    \"_id\": \"675cd9f6e932531360b858f1\",\n    \"borrowedBooks\": [],\n    \"createdAt\": \"2024-12-13T01:05:58.360Z\",\n    \"updatedAt\": \"2024-12-13T01:05:58.360Z\",\n    \"__v\": 0\n}"
+						},
+						{
+							"name": "error",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{api_url}}/add-member",
+									"host": [
+										"{{api_url}}"
+									],
+									"path": [
+										"add-member"
+									]
+								}
+							},
+							"status": "Internal Server Error",
+							"code": 500,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Security-Policy",
+									"value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Resource-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Origin-Agent-Cluster",
+									"value": "?1"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "no-referrer"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=31536000; includeSubDomains"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-DNS-Prefetch-Control",
+									"value": "off"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "none"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 14 Dec 2024 01:08:05 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								},
+								{
+									"key": "Content-Length",
+									"value": "0"
+								}
+							],
+							"cookie": [],
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "update member",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{api_url}}/update-member",
+							"host": [
+								"{{api_url}}"
+							],
+							"path": [
+								"update-member"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "update member",
+							"originalRequest": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"username\": \"zaynab_updated\"\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{api_url}}/update-member/675cd9f6e932531360b858f1",
+									"host": [
+										"{{api_url}}"
+									],
+									"path": [
+										"update-member",
+										"675cd9f6e932531360b858f1"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Security-Policy",
+									"value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Resource-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Origin-Agent-Cluster",
+									"value": "?1"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "no-referrer"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=31536000; includeSubDomains"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-DNS-Prefetch-Control",
+									"value": "off"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "none"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "285"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"11d-PzRiXJgrhDVvo7d9xK30io8kBHg\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 14 Dec 2024 01:11:12 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"_id\": \"675cd9f6e932531360b858f1\",\n    \"name\": \"zaynab\",\n    \"username\": \"zaynab_updated\",\n    \"email\": \"zaynab@gamil.com\",\n    \"birthDate\": \"2001-08-01T00:00:00.000Z\",\n    \"subscribedBooks\": [],\n    \"returnRate\": 0,\n    \"borrowedBooks\": [],\n    \"createdAt\": \"2024-12-14T01:05:58.360Z\",\n    \"updatedAt\": \"2024-12-14T01:11:12.355Z\",\n    \"__v\": 0\n}"
+						}
+					]
+				},
+				{
+					"name": "delete member",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{api_url}}/delete-member/675cda62e932531360b858f3",
+							"host": [
+								"{{api_url}}"
+							],
+							"path": [
+								"delete-member",
+								"675cda62e932531360b858f3"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "delete member",
+							"originalRequest": {
+								"method": "DELETE",
+								"header": [],
+								"url": {
+									"raw": "{{api_url}}/delete-member/675cda62e932531360b858f3",
+									"host": [
+										"{{api_url}}"
+									],
+									"path": [
+										"delete-member",
+										"675cda62e932531360b858f3"
+									]
+								}
+							},
+							"status": "No Content",
+							"code": 204,
+							"_postman_previewlanguage": "plain",
+							"header": [
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Security-Policy",
+									"value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Resource-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Origin-Agent-Cluster",
+									"value": "?1"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "no-referrer"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=31536000; includeSubDomains"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-DNS-Prefetch-Control",
+									"value": "off"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "none"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"29-mGllRP1qRmAD9PbZFGkh7ucQDnE\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 14 Dec 2024 01:13:59 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": null
+						}
+					]
+				},
+				{
+					"name": "get member by id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{api_url}}/member-profile/675cd9f6e932531360b858f1",
+							"host": [
+								"{{api_url}}"
+							],
+							"path": [
+								"member-profile",
+								"675cd9f6e932531360b858f1"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "not found",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"url": {
+									"raw": "{{api_url}}/member-profile/675cda62e932531360b858f3",
+									"host": [
+										"{{api_url}}"
+									],
+									"path": [
+										"member-profile",
+										"675cda62e932531360b858f3"
+									]
+								}
+							},
+							"status": "Not Found",
+							"code": 404,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Security-Policy",
+									"value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Resource-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Origin-Agent-Cluster",
+									"value": "?1"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "no-referrer"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=31536000; includeSubDomains"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-DNS-Prefetch-Control",
+									"value": "off"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "none"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "28"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"1c-VcfCg6yE5g97DMrLsNkvjLuHW3U\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 14 Dec 2024 01:16:31 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"error\": \"Member not found\"\n}"
+						}
+					]
+				},
+				{
+					"name": "borrow book",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "id",
+								"value": "675cd9f6e932531360b858f1",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"bookId\": \"675cc9831468a9bc5d272dd0\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{api_url}}/borrow-book",
+							"host": [
+								"{{api_url}}"
+							],
+							"path": [
+								"borrow-book"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "borrow book",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "id",
+										"value": "675cd9f6e932531360b858f1",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"bookId\": \"675cc9831468a9bc5d272dd0\"\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{api_url}}/borrow-book",
+									"host": [
+										"{{api_url}}"
+									],
+									"path": [
+										"borrow-book"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Security-Policy",
+									"value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Resource-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Origin-Agent-Cluster",
+									"value": "?1"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "no-referrer"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=31536000; includeSubDomains"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-DNS-Prefetch-Control",
+									"value": "off"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "none"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "445"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"1bd-3QHzC5+mWdVL/jx8XzwdsUYy/mM\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 14 Dec 2024 01:20:02 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": ""
+						},
+						{
+							"name": "error",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "id",
+										"value": "675cd9f6e932531360b858f1",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"bookId\": \"675cc9831468a9bc5d272dd0\"\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{api_url}}/borrow-book",
+									"host": [
+										"{{api_url}}"
+									],
+									"path": [
+										"borrow-book"
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Security-Policy",
+									"value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Resource-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Origin-Agent-Cluster",
+									"value": "?1"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "no-referrer"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=31536000; includeSubDomains"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-DNS-Prefetch-Control",
+									"value": "off"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "none"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "23"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"17-ZTygmP3G3L0qnZfKg6nmMxu7ASc\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 14 Dec 2024 01:21:25 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "\"Member ID is required\""
+						}
+					]
+				},
+				{
+					"name": "subscribe book",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "id",
+								"value": "675cd9f6e932531360b858f1",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"bookId\": \"675cc9831468a9bc5d272dd0\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{api_url}}/subscribe-book",
+							"host": [
+								"{{api_url}}"
+							],
+							"path": [
+								"subscribe-book"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "subscribe book",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "id",
+										"value": "675cd9f6e932531360b858f1",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"bookId\": \"675cc9831468a9bc5d272dd0\"\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{api_url}}/subscribe-book",
+									"host": [
+										"{{api_url}}"
+									],
+									"path": [
+										"subscribe-book"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Security-Policy",
+									"value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Resource-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Origin-Agent-Cluster",
+									"value": "?1"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "no-referrer"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=31536000; includeSubDomains"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-DNS-Prefetch-Control",
+									"value": "off"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "none"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "9"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"9-D5Qd9FW/fsMQJ/dx8nLVGxKDEeI\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 14 Dec 2024 01:39:34 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "\"success\""
+						},
+						{
+							"name": "error",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "id",
+										"value": "675cd9f6e932531360b858f1",
+										"type": "text",
+										"disabled": true
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"bookId\": \"675cc9831468a9bc5d272dd0\"\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{api_url}}/subscribe-book",
+									"host": [
+										"{{api_url}}"
+									],
+									"path": [
+										"subscribe-book"
+									]
+								}
+							},
+							"status": "Bad Request",
+							"code": 400,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Security-Policy",
+									"value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Resource-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Origin-Agent-Cluster",
+									"value": "?1"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "no-referrer"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=31536000; includeSubDomains"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-DNS-Prefetch-Control",
+									"value": "off"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "none"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "44"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"2c-Oyy1mOnkAY7MllQf16u1J8TkT8M\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 14 Dec 2024 01:40:12 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"error\": \"Member ID is required in headers\"\n}"
+						}
+					]
+				},
+				{
+					"name": "New Request",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": [
+						{
+							"name": "unsubscribe book",
+							"originalRequest": {
+								"method": "POST",
+								"header": [
+									{
+										"key": "id",
+										"value": "675cd9f6e932531360b858f1",
+										"type": "text"
+									}
+								],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n  \"bookId\": \"675cc9831468a9bc5d272dd0\"\r\n}\r\n",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{api_url}}/unsubscribe-book",
+									"host": [
+										"{{api_url}}"
+									],
+									"path": [
+										"unsubscribe-book"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Access-Control-Allow-Origin",
+									"value": "*"
+								},
+								{
+									"key": "Content-Security-Policy",
+									"value": "default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';img-src 'self' data:;object-src 'none';script-src 'self';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests"
+								},
+								{
+									"key": "Cross-Origin-Opener-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Cross-Origin-Resource-Policy",
+									"value": "same-origin"
+								},
+								{
+									"key": "Origin-Agent-Cluster",
+									"value": "?1"
+								},
+								{
+									"key": "Referrer-Policy",
+									"value": "no-referrer"
+								},
+								{
+									"key": "Strict-Transport-Security",
+									"value": "max-age=31536000; includeSubDomains"
+								},
+								{
+									"key": "X-Content-Type-Options",
+									"value": "nosniff"
+								},
+								{
+									"key": "X-DNS-Prefetch-Control",
+									"value": "off"
+								},
+								{
+									"key": "X-Download-Options",
+									"value": "noopen"
+								},
+								{
+									"key": "X-Frame-Options",
+									"value": "SAMEORIGIN"
+								},
+								{
+									"key": "X-Permitted-Cross-Domain-Policies",
+									"value": "none"
+								},
+								{
+									"key": "X-XSS-Protection",
+									"value": "0"
+								},
+								{
+									"key": "Content-Type",
+									"value": "application/json; charset=utf-8"
+								},
+								{
+									"key": "Content-Length",
+									"value": "9"
+								},
+								{
+									"key": "ETag",
+									"value": "W/\"9-D5Qd9FW/fsMQJ/dx8nLVGxKDEeI\""
+								},
+								{
+									"key": "Date",
+									"value": "Sat, 14 Dec 2024 01:43:07 GMT"
+								},
+								{
+									"key": "Connection",
+									"value": "keep-alive"
+								},
+								{
+									"key": "Keep-Alive",
+									"value": "timeout=5"
+								}
+							],
+							"cookie": [],
+							"body": "\"success\""
+						}
+					]
+				}
+			]
+		}
+	]
+}

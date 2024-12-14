@@ -1,0 +1,35 @@
+[{
+  "_id": {
+    "$oid": "675cc9831468a9bc5d272dd0"
+  },
+  "title": {
+    "en": "Book Title in English",
+    "ar": "وصف الكتاب بالعربية"
+  },
+  "isbn": "978457739858461",
+  "genre": "abc",
+  "description": {
+    "en": "description",
+    "ar": "وصف الكتاب بالعربية"
+  },
+  "numberOfAvailableCopies": 4,
+  "isBorrowable": true,
+  "numberOfBorrowableDays": 14,
+  "isOpenToReviews": true,
+  "minAge": 20,
+  "authorId": {
+    "$oid": "675cc8101468a9bc5d272dc2"
+  },
+  "coverImageUrl": "/uploads/ZaynabMama_CoverImage.png",
+  "publishedDate": {
+    "$date": "2024-12-13T00:37:21.967Z"
+  },
+  "isPublished": true,
+  "createdAt": {
+    "$date": "2024-12-11T23:55:47.760Z"
+  },
+  "updatedAt": {
+    "$date": "2024-12-13T00:37:21.969Z"
+  },
+  "__v": 0
+}]
